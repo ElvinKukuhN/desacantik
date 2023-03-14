@@ -30,6 +30,7 @@ class userController extends Controller
             'name' => $request->name,
             'kecamatan_id' => $request->kecamatan_id,
             'username' => $request->username,
+            'role' => 2,
             'password' => Hash::make($request->username),
         ]);
 
@@ -37,7 +38,7 @@ class userController extends Controller
 
         return redirect('/login')->with('success', 'Registrasi Berhasil, silahkan login');
     }
-    
+
 
     public function login()
     {
@@ -77,7 +78,7 @@ class userController extends Controller
     }
 
     public function password()
-    {   
+    {
         return view('admin.ubah_pass');
     }
 
@@ -96,7 +97,7 @@ class userController extends Controller
         return back()->with('success', 'Password berhasil dirubah');
     }
 
-    public function logout (Request $request)
+    public function logout(Request $request)
     {
         Auth::logout();
 
@@ -106,6 +107,4 @@ class userController extends Controller
 
         return redirect('/');
     }
-
-
 }

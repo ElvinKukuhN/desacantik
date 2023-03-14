@@ -36,8 +36,8 @@
                 <h4 class="page-title">Halaman Utama</h4>
             </div>
         </div>
-    </div>     
-    <!-- end page title -->  
+    </div>
+    <!-- end page title -->
 
     <div class="row">
     <div class="col-md-6">
@@ -61,7 +61,7 @@
         </div>
         <div id="piechart3" style="width: 500px; height: 300px;"></div>
     </div> <!-- end col-->
-    
+
     <div class="col-md-6">
         <div class="card-header text-white" style="background: rgba(224, 120, 8, 0.92)">
             Jenis dinding
@@ -75,7 +75,7 @@
         </div>
         <div id="piechart5" style="width: 500px; height: 300px;"></div>
     </div> <!-- end col-->
-   
+
     <div class="col-md-6">
         <div class="card-header text-white" style="background: rgba(8, 171, 212, 0.9)">
             Bahan Bakar Energi / Utama Memasak
@@ -98,7 +98,7 @@
     </div> <!-- end col-->
 
   </div>
-    
+
     <!-- Right sidebar-->
     @include('layout_admin.rightsidebar')
     <!-- End Right sidebar-->
